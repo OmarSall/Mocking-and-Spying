@@ -6,7 +6,7 @@ jest.mock('./getRandomNumberInRange', () => ({
   default: jest.fn(),
 }));
 
-describe('getRandomMonth', () => {
+describe('getRandomMonth function', () => {
   it('Should call getRandomNumberInRange with (0,11)', () => {
     getRandomNumberInRange.mockReturnValue(0);
 

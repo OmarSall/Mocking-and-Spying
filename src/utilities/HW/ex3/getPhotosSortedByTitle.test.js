@@ -6,7 +6,7 @@ jest.mock('./getPhotos', () => ({
   default: jest.fn(),
 }));
 
-describe('getPhotosSortedByTitle', () => {
+describe('getPhotosSortedByTitle function', () => {
   it('should return photos sorted alphabetically by title', async () => {
     getPhotos.mockResolvedValue([
       { id: 1, title: 'Sunset' },
